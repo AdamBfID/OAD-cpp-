@@ -1,4 +1,4 @@
-# Metaheuristic Optimization in C++
+# GMAM Metaheuristic Optimization (Outils d'aide à la décision) in C++
 
 This repository contains C++ implementations of various **metaheuristic algorithms** designed to solve complex optimization problems. The focus is on **single-solution based techniques**, including:
 
