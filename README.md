@@ -13,8 +13,8 @@ These algorithms are widely used for finding near-optimal solutions in large and
 - Clean and well-commented C++ implementations  
 - Support for custom cost/objective functions  
 - Parameter tuning and performance evaluation tools  
-- Comparison of algorithm behavior under different settings  
-- Mutation operator included (for potential Genetic Algorithm extension)
+- Comparison of algorithm behavior for Knapsac problems 
+
 
 ## Getting Started
 
