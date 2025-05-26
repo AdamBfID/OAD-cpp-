@@ -49,7 +49,6 @@ vector<vector<int>> TC = {
     {84, 83, 43, 4, 44, 6, 82, 92, 25, 83, 56, 18, 58, 14, 48, 70, 96, 32, 68, 92}
 };
 int maxWeight = 879;
-vector<int> initialSolution(TC[0].size(), 0);
 ```
 
 ### Running the Program
@@ -59,17 +58,6 @@ vector<int> initialSolution(TC[0].size(), 0);
 
 ### Sample Output
 ```
-Iteration 1:
-Current Solution: 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-Current Gain: 46
------------------------------
-Iteration 2:
-Current Solution: 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-Current Gain: 54
------------------------------
-...
-No better neighbor found. Stopping.
-
 Best Solution Found: 1 1 1 1 1 1 0 1 1 0 1 1 1 1 1 1 0 1 1 0
 Total Gain: 802
 Total Weight: 658
