@@ -1,13 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Prints a vector
+
 void printVector(const vector<int>& v) {
     for (int val : v) cout << val << " ";
     cout << endl;
 }
 
-// Prints a matrix
+
 void printMatrix(const vector<vector<int>>& mat) {
     for (const auto& row : mat) {
         for (int val : row) cout << val << " ";
@@ -15,7 +15,7 @@ void printMatrix(const vector<vector<int>>& mat) {
     }
 }
 
-// Calculates total gain for a given solution
+
 int calculateGain(const vector<vector<int>>& TC, const vector<int>& solution) {
     int gain = 0;
     for (size_t i = 0; i < solution.size(); ++i)
@@ -23,7 +23,6 @@ int calculateGain(const vector<vector<int>>& TC, const vector<int>& solution) {
     return gain;
 }
 
-// Calculates total weight for a given solution
 int calculateWeight(const vector<vector<int>>& TC, const vector<int>& solution) {
     int weight = 0;
     for (size_t i = 0; i < solution.size(); ++i)
@@ -31,7 +30,6 @@ int calculateWeight(const vector<vector<int>>& TC, const vector<int>& solution) 
     return weight;
 }
 
-// Generates neighbor solutions by flipping each bit
 vector<vector<int>> generateNeighbors(const vector<int>& solution) {
     int n = solution.size();
     vector<vector<int>> neighbors;
@@ -44,7 +42,6 @@ vector<vector<int>> generateNeighbors(const vector<int>& solution) {
     return neighbors;
 }
 
-// Selects the best solution from neighbors that’s not in Tabu and respects the weight limit
 vector<int> findBestNeighbor(const vector<vector<int>>& TC, const vector<vector<int>>& neighbors,
                              const vector<vector<int>>& tabuList, int maxWeight) {
     vector<int> bestSolution;
@@ -62,8 +59,6 @@ vector<int> findBestNeighbor(const vector<vector<int>>& TC, const vector<vector<
     }
     return bestSolution;
 }
-
-// Runs the Tabu Search algorithm
 vector<int> tabuSearch(const vector<vector<int>>& TC, vector<int> initialSolution, int maxIterations, int maxWeight, int tabuTenure) {
     vector<int> currentSolution = initialSolution;
     vector<int> bestSolution = initialSolution;
@@ -98,13 +93,12 @@ vector<int> tabuSearch(const vector<vector<int>>& TC, vector<int> initialSolutio
 
 // Main function
 int main() {
-    // Test case: {gain vector, weight vector}
+    
     vector<vector<int>> TC = {
-        {7, 4, 3, 3},   // Gains
-        {13, 12, 8, 10} // Weights
+        {7, 4, 3, 3},   
+        {13, 12, 8, 10} 
     };
-
-    vector<int> initialSolution = {0, 1, 0, 1}; // Initial solution
+    vector<int> initialSolution = {0, 1, 0, 1}; 
     int maxIterations = 5;
     int maxWeight = 30;
     int tabuTenure = 2;
