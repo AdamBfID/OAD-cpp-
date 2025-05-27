@@ -1,0 +1,14 @@
+﻿prob_name,num_elements,max_weight,optimum
+prob-1-low.csv,10,269,295
+prob-2-low.csv,20,878,1024
+prob-3-low.csv,4,20,35
+prob-4-low.csv,4,11,23
+prob-5-low.csv,15,375,481.0694
+prob-6-low.csv,10,60,52
+prob-7-low.csv,7,50,107
+prob-8-low.csv,23,10000,9767
+prob-9-low.csv,5,80,130
+prob-10-low.csv,20,879,1025
+
+
+
